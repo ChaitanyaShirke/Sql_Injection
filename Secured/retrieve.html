@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hospital Patients Details Retrieval</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Hospital Patients Details Retrieval</h1>
+  <form id="retrieve-form">
+    <label for="pname">Patient Name:</label>
+    <input type="text" id="pname" name="pname">
+    <br>
+    <label for="patient_id">Patient ID:</label>
+    <input type="text" id="patient_id" name="patient_id">
+    <br>
+    <input type="submit" value="Retrieve">
+  </form>
+  <button id="download-btn" style="display:none;">Download CSV</button>
+  <div id="results"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

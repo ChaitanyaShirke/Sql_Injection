@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Insert Patient Data</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #000080;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 16px;
+      color: #000080;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"] {
+      width: 95%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #000080;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Insert Patient Record</h1>
+    <form action="insert_handler.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+      <label for="gender">Gender:</label>
+      <input type="text" id="gender" name="gender" required>
+      <label for="blood_type">Blood Type:</label>
+      <input type="text" id="blood_type" name="blood_type" required>
+      <label for="medical_condition">Medical Condition:</label>
+      <input type="text" id="medical_condition" name="medical_condition" required>
+      <label for="date_of_admission">Date of Admission:</label>
+      <input type="date" id="date_of_admission" name="date_of_admission" required><br>
+      <label for="doctor">Doctor:</label>
+      <input type="text" id="doctor" name="doctor" required>
+      <label for="insurance_provider">Insurance Provider:</label>
+      <input type="text" id="insurance_provider" name="insurance_provider" required>
+      <label for="billing_amount">Billing Amount:</label>
+      <input type="number" id="billing_amount" name="billing_amount" required>
+      <label for="room_number">Room Number:</label>
+      <input type="number" id="room_number" name="room_number" required>
+      <label for="admission_type">Admission Type:</label>
+      <input type="text" id="admission_type" name="admission_type" required>
+      <label for="discharge_date">Discharge Date:</label>
+      <input type="date" id="discharge_date" name="discharge_date" required><br>
+      <label for="medication">Medication:</label>
+      <input type="text" id="medication" name="medication" required>
+      <label for="test_results">Test Results:</label>
+      <input type="text" id="test_results" name="test_results" required>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>

